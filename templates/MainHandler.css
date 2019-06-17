@@ -1,0 +1,42 @@
+#links {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  background-color: rgba(0,0,0,0);
+  margin: 10px;
+  min-height: 20px;
+}
+
+
+
+#links {
+  float: inherit;
+  position: sticky;
+}
+
+#links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+
+#links {
+  justify-content: space-between;
+  align-items: center;
+
+}
+#links {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 7px 10px;
+
+  text-decoration: overline;
+}
+
+#links :hover {
+  background-color: white;
+}
