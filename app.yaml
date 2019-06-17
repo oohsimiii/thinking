@@ -3,10 +3,13 @@ api_version: 1
 threadsafe: true
 
 handlers:
+- url: /style
+  static_dir: style
+  
 - url: /.*
   script: main.app
 
-libraries: 
+libraries:
 - name: webapp2
   version: latest
 - name: jinja2
