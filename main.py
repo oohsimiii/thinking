@@ -29,10 +29,9 @@ class MainHandler(webapp2.RequestHandler):
         else:
             email = user.nickname()
             logout_url = users.create_logout_url("/")
-            self.response.write("Hello " + email + ', you are logged in. <a href="' +
-            logout_url + '">Click here to logout</a>')
+            dd = {"Logout": logout_url, "username": email}
             main_template = jinja_env.get_template("templates/MainHandler.html")
-            self.response.write(main_template.render())
+            self.response.write(main_template.render(dd))
 
 
 class nouserHandler(webapp2.RequestHandler):
