@@ -14,3 +14,9 @@ html, body {
     -o-border-radius: 50%;
     border-radius: 50%;
 }
+
+h3 {
+  width: 150px;
+  height: 150px;
+  color: blue;
+}
