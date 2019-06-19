@@ -4,6 +4,17 @@ html, body {
   margin: 0;
 }
 
+
+#imageUpload
+{
+    display: none;
+}
+
+#profileImage
+{
+    cursor: pointer;
+}
+
 #profile-container {
     width: 150px;
     height: 150px;
@@ -13,6 +24,15 @@ html, body {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     border-radius: 50%;
+    border-style: dotted;
+}
+
+#profileImage {
+  width: 150px;
+  height: 150px;
+  margin-top: -1px;
+  margin-left: -1px;
+  border-radius:50%;
 }
 
 h3 {
