@@ -8,12 +8,10 @@
   <body>
     <div id="navbar">
       <nav>
+        <p>Donation$</p>
         <p>Personal Info</p>
         <ul>
-          <li><a href="/charityamount">Charity Organisations</a></li>
-          <li><a href="/personal">{{username}}</a></li>
-          <li><a href="/Leaderboard">Leaderboard</a></li>
-          <li><a href="/about">About Us</a></li>
+          <li><a href="/">Main Menu</a></li>
           <li><a href={{Logout}}>Logout</a></li>
         </ul>
       </nav>
@@ -22,11 +20,11 @@
     <h2>My Profile</h2>
   </body>
   <div id="profile-container">
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-   <image id="profileImage" src="http://lorempixel.com/100/100" />
-   <input id="imageUpload" type="file"
-          name="profile_photo" placeholder="Photo" required="" capture>
-  </div>
+    <image id="profileImage" src="http://s3.amazonaws.com/37assets/svn/765-default-avatar.png" />
+ </div>
+ <input id="imageUpload" type="file"
+        name="profile_photo" placeholder="Photo" required="" capture>
+ </div>
   <body>
     <h3>Username: {{username}} </h3>
     <h3>Bank account: {{MoneyInBank}}</h3>
