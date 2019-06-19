@@ -60,3 +60,19 @@ h1 {
 }
 
 * {box-sizing:border-box}
+
+
+h1 {
+  font-family: 'Dosis', sans-serif;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Dosis', sans-serif;
+  text-align: left;
+}
+
+h3 {
+  font-family: 'Dosis', sans-serif;
+  text-align: center;
+}
