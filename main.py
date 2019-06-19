@@ -58,8 +58,19 @@ class charityAmountHandler(webapp2.RequestHandler):
 
 class LeaderboardHandler(webapp2.RequestHandler):
     def get(self):
-        leaderboard_template = jinja_env.get_template("templates/LeaderboardHandler.html")
-        self.response.write(leaderboard_template.render())
+        user = users.get_current_user()
+        if user:
+            email = user.nickname()
+            logout_url = users.create_logout_url("/")
+            dd = {"Loginout": logout_url, "Loginoutresponse": "Logout", "username": email}
+            leaderboard_template = jinja_env.get_template("templates/LeaderboardHandler.html")
+            self.response.write(leaderboard_template.render(dd))
+        else:
+            email = "Main Page"
+            login_url = users.create_login_url("/")
+            dd = {"Loginout": login_url, "Loginoutresponse": "Login", "username": email}
+            leaderboard_template = jinja_env.get_template("templates/LeaderboardHandler.html")
+            self.response.write(leaderboard_template.render(dd))
 
 class PersonalHandler(webapp2.RequestHandler):
     def get(self):
