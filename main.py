@@ -1,5 +1,6 @@
 import webapp2
 import os
+import json
 import jinja2
 from google.appengine.api import users
 #from charity_models import Charities
@@ -78,8 +79,12 @@ class PersonalHandler(webapp2.RequestHandler):
         if user:
             email = user.nickname()
             logout_url = users.create_logout_url("/")
-            dd = {"Loginout": logout_url, "Loginoutresponse": "Logout", "username": email, "MoneyInBank": "$",
-            "TotalDonated": "$"}
+            dd = {"Loginout": logout_url,
+                  "Loginoutresponse": "Logout",
+                  "username": email,
+                  "MoneyInBank": "$",
+                  "TotalDonated": "$",
+                  "img_url": ""}
             personal_template = jinja_env.get_template("templates/PersonalHandler.html")
             self.response.write(personal_template.render(dd))
         else:
