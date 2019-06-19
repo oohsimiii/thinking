@@ -1,8 +1,8 @@
 from google.appengine.ext import ndb
 
-class Charities(ndb.Model):
+class Charity(ndb.Model):
     charity_name = ndb.StringProperty(required=True)
-    cause = ndd.StringProperty(required = True)
+    link = ndb.StringProperty(required = True)
 
 class Username(ndb.Model):
     username_id = ndb.IntegerProperty(required = True)
@@ -11,4 +11,3 @@ class Username(ndb.Model):
 
 class Donation(ndb.Model):
     amount = ndb.IntegerProperty(required=True)
-    

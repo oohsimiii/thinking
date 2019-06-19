@@ -56,6 +56,7 @@ class charityAmountHandler(webapp2.RequestHandler):
             self.response.write(Amount_template.render(dd))
 
 
+
 class LeaderboardHandler(webapp2.RequestHandler):
     def get(self):
         user = users.get_current_user()
@@ -100,7 +101,7 @@ class aboutHandler(webapp2.RequestHandler):
             dd = {"Loginout": login_url, "Loginoutresponse": "Login", "username": email}
             about_template = jinja_env.get_template("templates/aboutHandler.html")
             self.response.write(about_template.render(dd))
-
+ 
 
 
 app = webapp2.WSGIApplication([
