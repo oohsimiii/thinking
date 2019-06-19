@@ -15,6 +15,7 @@ html, body {
 
 #container {
   width: 600px;
+  margin-left: auto;
   height: auto;
   margin: 0 auto;
 }
@@ -56,23 +57,27 @@ html, body {
 }
 
 .row:nth-child(4) {
-  background: white;
+  background: #ffffffde;
 }
 
 .row:nth-child(5) {
-  background: white;
+  background: #ffffffde;
 }
 .row:nth-child(6) {
-  background: white;
+  background: #ffffffde;
 }
 .row:nth-child(7) {
-  background: white;
+  background: #ffffffde;
 }
 .row:nth-child(8) {
-  background: white;
+  background: #ffffffde;
 }
 .row:nth-child(9) {
-  background: white;
+  background: #ffffffde;
+}
+
+.row:nth-child(10) {
+  background: #ffffffde;
 }
 
 html, body {
