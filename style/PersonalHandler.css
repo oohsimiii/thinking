@@ -55,7 +55,7 @@ nav ul li {
   font-family: 'Dosis', sans-serif;
   float: left;
   list-style: none;
-  position: relative;
+  position: auto;
 }
 
 nav ul li a {
