@@ -69,10 +69,30 @@ h1 {
 
 h2 {
   font-family: 'Dosis', sans-serif;
-  text-align: left;
+  text-align: center;
+  justify-content: center;
 }
 
 h3 {
   font-family: 'Dosis', sans-serif;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%
+}
+
+.elderly {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+elderly.resize {
+  max width: 50%
+  max height: 70%
+}
+
+#quote {
+  color: #2e589b;
 }
