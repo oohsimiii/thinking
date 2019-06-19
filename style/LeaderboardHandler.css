@@ -11,12 +11,13 @@ html, body {
 /* Silver */
 .row:nth-child(2) {background: #c0c0c0;}
 /* Bronze */
-.row:nth-child(3) {background: #cd7f32;}
+.row:nth-child(3) {background: #bc8e21;}
 
 #container {
   width: 600px;
   height: auto;
 }
+
 
 .row {
   position: relative;
@@ -38,6 +39,7 @@ html, body {
   position: relative;
   display: inline-block;
   width: 25%;
+  font-family: 'Teko', sans-serif;
 }
 
 .row:nth-child(1) {
@@ -49,15 +51,7 @@ html, body {
 }
 
 .row:nth-child(3) {
-  background: #cd7f32;
-}
-
-.row:nth-child(4) {
-  background: white;
-}
-
-.row:nth-child(5) {
-  background: white;
+  background: #bc8e21;
 }
 
 html, body {
