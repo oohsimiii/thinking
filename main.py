@@ -1,9 +1,12 @@
+# coding: utf-8
 import webapp2
 import os
 import json
 import jinja2
 from google.appengine.api import users
-#from charity_models import Charities
+from charity_models import Charity
+from seed_Donation import seed_data
+
 
 jinja_env = jinja2.Environment(
     loader=jinja2.FileSystemLoader(os.path.dirname(__file__)),
@@ -52,9 +55,17 @@ class charityAmountHandler(webapp2.RequestHandler):
         else:
             email = user.nickname()
             logout_url = users.create_logout_url("/")
+            Charities = Charity.query().fetch()
+            i = 0
+            while i < len(Charities):
+              print(Charities[i].charity_name.encode('utf-8'))
+              i += 1
             dd = {"Loginout": logout_url, "Loginoutresponse": "Logout", "username": email}
+
             Amount_template = jinja_env.get_template("templates/charityAmountHandler.html")
             self.response.write(Amount_template.render(dd))
+
+
 
 
 class LeaderboardHandler(webapp2.RequestHandler):
@@ -107,6 +118,9 @@ class aboutHandler(webapp2.RequestHandler):
             self.response.write(about_template.render(dd))
 
 
+class LoadDataHandler(webapp2.RequestHandler):
+    def get(self):
+        seed_data()
 
 app = webapp2.WSGIApplication([
     ('/', LoginHandler),
@@ -115,5 +129,6 @@ app = webapp2.WSGIApplication([
     ('/charityamount', charityAmountHandler),
     ('/Leaderboard', LeaderboardHandler),
     ('/personal', PersonalHandler),
-    ('/about', aboutHandler)
+    ('/about', aboutHandler),
+    ('/seed-data', LoadDataHandler)
 ], debug=True)
