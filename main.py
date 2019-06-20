@@ -68,7 +68,7 @@ class charityAmountHandler(webapp2.RequestHandler):
 
               i += 1
             print(C)
-            
+
             dd = {"Loginout": logout_url, "Loginoutresponse": "Logout", "username": email, "Ch": C}
 
             Amount_template = jinja_env.get_template("templates/charityAmountHandler.html")

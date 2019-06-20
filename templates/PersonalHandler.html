@@ -7,6 +7,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="templates/PersonalHandler.js"></script>
+
   </head>
   <body>
     <div id="navbar">
@@ -28,7 +29,7 @@
     <image id="profileImage" src="http://s3.amazonaws.com/37assets/svn/765-default-avatar.png" />
   </div>
   <div>
-    <form>
+    <form action= templates/PersonalHandler.js method = "post">
       <input type="file" name="fileupload" value="fileupload" id="fileupload">
       <label for="fileupload"> Select a file to upload</label>
       <input type="submit" value="submit">
@@ -40,4 +41,6 @@
     <h3>Total donated: {{TotalDonated}}</h3>
     <h4>Balance: {{MoneyInBank}}</h4>
   </div>
+
+</body>
 </html>
