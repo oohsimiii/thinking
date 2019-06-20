@@ -54,30 +54,50 @@ nav ul li a:hover {
   background-color: #73a3c4de;
 }
 
-p {
+.MaD {
   font-family: 'Dosis', sans-serif;
   float: left;
   padding: 0 100px;
   text-decoration: none;
   position: relative;
+  font-size: 48px;
 }
 
-select {
+div select {
   font-family: 'Dosis', sans-serif;
   float: left;
   padding: 20px 100px;
-  border-radius: 100px;
+  margin-left: 100px;
   text-decoration: none;
   position: relative;
+  font-size: 16px;
 }
 
-select option {
+.sel {
   font-family: 'Dosis', sans-serif;
   float: left;
-  padding: 20px 100px;
-  border-left-width: medium;
+  padding: 0 100px;
   text-decoration: none;
   position: relative;
+  font-size: 24px;
+}
+
+.abt {
+  font-family: 'Dosis', sans-serif;
+  float: left;
+  padding: 0 80px;
+  text-decoration: none;
+  position: relative;
+  font-size: 24px;
+}
+
+p a {
+  font-family: 'Dosis', sans-serif;
+  float: left;
+  padding: 0 80px;
+  text-decoration: none;
+  position: relative;
+  font-size: 24px;
 }
 
 h1 {

@@ -60,12 +60,16 @@ class charityAmountHandler(webapp2.RequestHandler):
             Charities = Charity.query().fetch()
             print(Charities)
             C = []
+            L = []
             i = 0
-            while i < len(Charities)-1:
+            while i < len(Charities):
               C.append(Charities[i].charity_name)
+              L.append(Charities[i].link)
+
               i += 1
             print(C)
-            dd = {"Loginout": logout_url, "Loginoutresponse": "Logout", "username": email, "Ch": C[i-1]}
+            
+            dd = {"Loginout": logout_url, "Loginoutresponse": "Logout", "username": email, "Ch": C}
 
             Amount_template = jinja_env.get_template("templates/charityAmountHandler.html")
             self.response.write(Amount_template.render(dd))

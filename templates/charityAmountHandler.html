@@ -35,37 +35,24 @@
     <br>
     <br>
     <div>
-      <p>Make a Donation</p>
-<<<<<<< HEAD
+      <p class="MaD">Make a Donation</p>
 
       {% block content %}
         <br>
         <br>
-        <select>
-          {% for Charity in Ch %}
-          <option>{{Ch}}</option>
+        <br>
+        <br>
+        <br>
+        <p class="sel">Select a Charity:</p>
+        <br>
+        <br>
+        <br>
+        <select class="select-css">
+          {% for item in Ch %}
+          <option>{{item}}</option>
           {% endfor %}
         </select>
+        <p class= "abt">About them:<a href="{{link}}">{{Link}}</a></p>
       {% endblock %}
-=======
-      <select>
-        {% for Charity in Charities %}
-        <option>{{Charities[i].charity_name.encode('utf-8')}}</option>
-        {% endfor %}
-      </select>
-
-
-      </div>
-      </form>
-      </div>
-      </div>
-      </div>
-      </div>
-
-
-
-
-
->>>>>>> 21997f398e72736b13857eb0b26e0e048fca71d8
   </body>
 </html>
