@@ -36,10 +36,36 @@
     <br>
     <div>
       <p>Make a Donation</p>
+<<<<<<< HEAD
+
+      {% block content %}
+        <br>
+        <br>
+        <select>
+          {% for Charity in Ch %}
+          <option>{{Ch}}</option>
+          {% endfor %}
+        </select>
+      {% endblock %}
+=======
       <select>
         {% for Charity in Charities %}
         <option>{{Charities[i].charity_name.encode('utf-8')}}</option>
         {% endfor %}
       </select>
+
+
+      </div>
+      </form>
+      </div>
+      </div>
+      </div>
+      </div>
+
+
+
+
+
+>>>>>>> 21997f398e72736b13857eb0b26e0e048fca71d8
   </body>
 </html>

@@ -1,4 +1,6 @@
 from google.appengine.ext import ndb
+import sys
+sys.setrecursionlimit(2000)
 
 class Charity(ndb.Model):
     charity_name = ndb.StringProperty(required=True)

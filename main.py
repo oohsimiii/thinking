@@ -6,7 +6,9 @@ import jinja2
 from google.appengine.api import users
 from charity_models import Charity
 from seed_Donation import seed_data
+import sys
 
+sys.setrecursionlimit(2000)
 
 jinja_env = jinja2.Environment(
     loader=jinja2.FileSystemLoader(os.path.dirname(__file__)),
@@ -56,11 +58,14 @@ class charityAmountHandler(webapp2.RequestHandler):
             email = user.nickname()
             logout_url = users.create_logout_url("/")
             Charities = Charity.query().fetch()
+            print(Charities)
+            C = []
             i = 0
-            while i < len(Charities):
-              print(Charities[i].charity_name.encode('utf-8'))
+            while i < len(Charities)-1:
+              C.append(Charities[i].charity_name)
               i += 1
-            dd = {"Loginout": logout_url, "Loginoutresponse": "Logout", "username": email}
+            print(C)
+            dd = {"Loginout": logout_url, "Loginoutresponse": "Logout", "username": email, "Ch": C[i-1]}
 
             Amount_template = jinja_env.get_template("templates/charityAmountHandler.html")
             self.response.write(Amount_template.render(dd))

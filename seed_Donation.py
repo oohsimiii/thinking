@@ -1,5 +1,7 @@
 # coding: utf-8
 from charity_models import Charity
+import sys
+sys.setrecursionlimit(2000)
 
 def seed_data():
     C1_key = Charity(charity_name = "Singapore Children's Society", link = "https://www.childrensociety.org.sg/").put()
@@ -21,7 +23,7 @@ def seed_data():
     C17_key = Charity(charity_name = "Singapore Council of Women's Organisations", link ="https://www.scwo.org.sg/" ).put()
     C18_key = Charity(charity_name = "Aidha", link = "http://www.aidha.org/").put()
     C19_key = Charity(charity_name = "Association of Women for Action and Research (AWARE)", link = "http://www.aware.org.sg/register/volunteer-centre/").put()
-    C20_key = Charity(charity_name = "Asian Women’s Welfare Association (AWWA)", link ="https://www.awwa.org.sg/" ).put()
+    C20_key = Charity(charity_name = "Asian Women's Welfare Association (AWWA)", link ="https://www.awwa.org.sg/" ).put()
     C21_key = Charity(charity_name = "ONE (Singapore)", link ="http://onesingapore.org/" ).put()
     C22_key = Charity(charity_name = "TOUCH Community Services", link = "https://www.touch.org.sg/").put()
     C23_key = Charity(charity_name = "Singapore Red Cross Society", link = "http://www.redcross.org.sg/").put()
