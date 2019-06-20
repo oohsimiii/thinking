@@ -1,9 +1,10 @@
 
 function(ReplaceImage) {
-    $("#profileImage").replace(".profile_photo");
+    $("#profileImage").replace(fileupload);
+  }
 
-$("#profileImage").click(function(ReplaceImage)
-);
+$("#profileImage").click(ReplaceImage);
+
 
 
 

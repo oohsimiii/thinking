@@ -23,11 +23,23 @@
   </body>
   <div id="profile-container">
     <image id="profileImage" src="http://s3.amazonaws.com/37assets/svn/765-default-avatar.png" />
+
  </div>
  <input id="imageUpload" type="file"
         name="profile_photo" placeholder="Photo" required="" capture>
  </div>
   <div id="titles">
+
+  </div>
+  <div>
+    <form>
+      <input type="file" name="fileupload" value="fileupload" id="fileupload">
+      <label for="fileupload"> Select a file to upload</label>
+      <input type="submit" value="submit">
+    </form>
+  </div>
+  <body>
+
     <h3>Username: {{username}} </h3>
     <h3>Total donated: {{TotalDonated}}</h3>
     <h4>Balance: {{MoneyInBank}}</h4>
