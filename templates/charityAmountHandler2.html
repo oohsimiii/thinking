@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Donate an amount</title>
-    <link rel="stylesheet" href="style/charityAmountHandler.css">
+    <link rel="stylesheet" href="style/charityAmountHandler2.css">
     <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
   </head>
   <body>
@@ -36,26 +36,21 @@
     <br>
     <div>
       <p class="MaD">Make a Donation</p>
-      <form method="post" action="/memeresult">
-        {% block content %}
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <p class="sel">Select a Charity:</p>
-          <br>
-          <br>
-          <br>
-          <select class="select-css">
-            {% for item in Ch %}
-            <option>{{item}}</option>
-            {% endfor %}
-          </select>
-          <div>
-            <input type="submit" value="Go!">
-          </div>
-        {% endblock %}
-      </form>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <p class="sel">{{item}}</p>
+      <br>
+      <br>
+      <br>
+
+      <div>
+        <p class= "abt">About them:</p>
+          <a href="{{link}}">{{link}}</a>
+      </div>
+      <br>
+      <br>
   </body>
 </html>
