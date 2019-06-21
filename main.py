@@ -4,7 +4,7 @@ import os
 import json
 import jinja2
 from google.appengine.api import users
-from charity_models import Charity
+from charity_models import Charity, Donors
 from seed_Donation import seed_data
 import sys
 
@@ -80,6 +80,8 @@ class charityAmountHandler(webapp2.RequestHandler):
 class LeaderboardHandler(webapp2.RequestHandler):
     def get(self):
         user = users.get_current_user()
+        
+
         if user:
             email = user.nickname()
             logout_url = users.create_logout_url("/")
