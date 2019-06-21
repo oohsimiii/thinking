@@ -5,6 +5,8 @@ html, body {
   font-family: "Dosis" sans-serif;
 }
 
+
+
 .button{
   font-weight: bold;
   -webkit-transition: all .5s;
@@ -42,12 +44,13 @@ html, body {
     overflow: hidden;
     display: block;
     max-width: 300px;
-    margin: auto;
+    margin: 100px;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     border-radius: 50%;
+    border-style: dotted;
 }
 
 #profile-container img {
