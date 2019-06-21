@@ -11,6 +11,7 @@ html, body {
 
 
 #profile-container {
+  margin-left: 100px;
     width: 150px;
     height: 150px;
     overflow: hidden;
@@ -30,6 +31,7 @@ html, body {
 }
 
 h3 {
+  margin-left: 100px;
   width: 150px;
   height: 150px;
   color: blue;
@@ -86,11 +88,18 @@ nav ul li a:hover {
 }
 
 h1 {
+  margin-left: 100px;
   font-family: 'Dosis', sans-serif;
   text-align: center;
 }
 
 h2 {
+  margin-left:100px;
+  font-family: 'Dosis', sans-serif;
+}
+
+h4 {
+  margin-left:100px;
   font-family: 'Dosis', sans-serif;
 }
 
