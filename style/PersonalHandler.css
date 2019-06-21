@@ -5,6 +5,8 @@ html, body {
   font-family: "Dosis" sans-serif;
 }
 
+
+
 .button{
   font-weight: bold;
   -webkit-transition: all .5s;
@@ -31,6 +33,9 @@ html, body {
     width: 150px;
     height: 150px;
     overflow: hidden;
+    display: block;
+    max-width: 300px;
+    margin: 100px;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
@@ -39,16 +44,15 @@ html, body {
     border-style: dotted;
 }
 
+#profile-container img {
+    width: 150px;
+    height: 150px;
+}
+
 body {
   background-color: #efefef;
 }
 
-h3 {
-  margin-left: 100px;
-  width: 150px;
-  height: 150px;
-  color: blue;
-}
 
 * {
   margin: 0;
@@ -109,6 +113,15 @@ h1 {
 h2 {
   margin-left:100px;
   font-family: 'Dosis', sans-serif;
+}
+
+
+h3 {
+  font-family: 'Dosis', sans-serif;
+  margin-left: 100px;
+  width: 150px;
+  height: 150px;
+  color: blue;
 }
 
 h4 {

@@ -121,8 +121,8 @@ class PersonalHandler(webapp2.RequestHandler):
             dd = {"Loginout": logout_url,
                   "Loginoutresponse": "Logout",
                   "username": email,
-                  "MoneyInBank": "$",
-                  "TotalDonated": "$",
+                  "MoneyInBank": "$1,00,000",
+                  "TotalDonated": "$100",
                   "img_url": ""}
             personal_template = jinja_env.get_template("templates/PersonalHandler.html")
             self.response.write(personal_template.render(dd))
