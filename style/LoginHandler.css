@@ -149,6 +149,32 @@ h1 {
   animation-duration: 1.5s;
 }
 
+
+.box{
+  font-weight: bold;
+  -webkit-transition: all .5s;
+  -webkit-border-radius: 5px;
+  line-height: 50px;
+  color: white;
+  background: #b6d8efde;
+  width: 200px;
+  text-align: center;
+  font-family: 'Dosis', sans-serif, bold;
+  justify-content: flex-end;
+  box-shadow: 1px 1px 5px rgba(0,0,0,1);
+              1px 1px 5px rgba(0,0,0,0.3);
+  cursor: pointer;
+  display: block;
+  max-width: 300px;
+  margin: auto;
+}
+
+.box:hover{
+  background: #73a3c4de;
+  cursor: pointer;
+}
+
+
 @-webkit-keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
