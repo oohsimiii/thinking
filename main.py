@@ -75,18 +75,18 @@ class charityAmountHandler(webapp2.RequestHandler):
             self.response.write(Amount_template.render(dd))
 
     def post(self):
-        Charities = Charity.query().fetch()
-        C = []
-        L = []
-        links = ""
-        i = 0
-        select = self.request.get("select-css")
-        done = False
-        for item in Charities:
-          if select == item.charity_name:
-            links = item.link
-            self.redirect(links)
-            
+        #Charities = Charity.query().fetch()
+        #C = []
+        #L = []
+        #links = ""
+        #i = 0
+        #select = self.request.get("select-css")
+        #done = False
+        #for item in Charities:
+        #  if select == item.charity_name:
+        #    links = item.link
+        self.redirect("http://www.spca.org.sg/")
+
 
 
 
