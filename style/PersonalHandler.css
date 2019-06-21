@@ -26,33 +26,17 @@ html, body {
   cursor: pointer;
 }
 
-#imageUpload
-{
-    display: none;
-}
-
-#profileImage
-{
-    cursor: pointer;
-}
-
 #profile-container {
+  margin-left: 100px;
     width: 150px;
     height: 150px;
     overflow: hidden;
-    display: block;
-    max-width: 300px;
-    margin: auto;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     border-radius: 50%;
-}
-
-#profile-container img {
-    width: 150px;
-    height: 150px;
+    border-style: dotted;
 }
 
 body {
