@@ -110,6 +110,23 @@ class PersonalHandler(webapp2.RequestHandler):
         else:
             self.redirect("/nouser")
 
+class PersonalHandler1(webapp2.RequestHandler):
+    def get(self):
+        user = users.get_current_user()
+        if user:
+            email = user.nickname()
+            logout_url = users.create_logout_url("/")
+            dd = {"Loginout": logout_url,
+                  "Loginoutresponse": "Logout",
+                  "username": email,
+                  "MoneyInBank": "$",
+                  "TotalDonated": "$",
+                  "img_url": ""}
+            personal_template = jinja_env.get_template("templates/PersonalHandler1.html")
+            self.response.write(personal_template.render(dd))
+        else:
+            self.redirect("/nouser")
+
 class aboutHandler(webapp2.RequestHandler):
     def get(self):
         user = users.get_current_user()
@@ -131,6 +148,8 @@ class LoadDataHandler(webapp2.RequestHandler):
     def get(self):
         seed_data()
 
+
+
 app = webapp2.WSGIApplication([
     ('/', LoginHandler),
     ('/loggedin', MainHandler),
@@ -138,6 +157,7 @@ app = webapp2.WSGIApplication([
     ('/charityamount', charityAmountHandler),
     ('/Leaderboard', LeaderboardHandler),
     ('/personal', PersonalHandler),
+    ('/personal1', PersonalHandler1),
     ('/about', aboutHandler),
     ('/seed-data', LoadDataHandler)
 ], debug=True)
