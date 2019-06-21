@@ -9,12 +9,6 @@ html, body {
   font-family: 'Dosis', sans-serif;
 }
 
-
-#profileImage
-{
-    cursor: pointer;
-}
-
 #profile-container {
     width: 150px;
     height: 150px;
