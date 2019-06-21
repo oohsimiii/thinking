@@ -6,7 +6,8 @@
     <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="js/PersonalHandler.js"></script>
+    <script src="templates/PersonalHandler.js"></script>
+
   </head>
   <body>
     <div id="navbar">
@@ -23,33 +24,17 @@
     </div>
     <br>
     <h2>My Profile</h2>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
   </body>
-  <br>
-  <br>
-  <br>
-
-  <div class="button"><a href= "/changedp">Edit profile picture</a></div>
-
-  <!--<div id="profile-container">
+  <div id="profile-container">
     <image id="profileImage" src="http://s3.amazonaws.com/37assets/svn/765-default-avatar.png" />
   </div>
   <div>
-    <form method = post action = "/see_data">
+    <form post = "/PersonalHandler">
       <input type="file" name="fileupload" value="fileupload" id="fileupload">
       <label for="fileupload"> Select a file to upload</label>
       <input type="submit" value="submit">
     </form>
-  </div>-->
-  <br>
-  <br>
-  <br>
-  <br>
+  </div>
   <body>
 
     <h3>Username: {{username}} </h3>
@@ -59,3 +44,25 @@
 
 </body>
 </html>
+
+
+<!--CSS:
+#profile-container {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    border-style: dotted;
+}
+
+#profileImage {
+  width: 150px;
+  height: 150px;
+  margin-top: -1px;
+  margin-left: -1px;
+}
+-->

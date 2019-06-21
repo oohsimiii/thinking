@@ -4,7 +4,7 @@ import os
 import json
 import jinja2
 from google.appengine.api import users
-from charity_models import Charity
+from charity_models import Charity, Donors
 from seed_Donation import seed_data
 import sys
 
@@ -149,6 +149,8 @@ class charityAmountHandler(webapp2.RequestHandler):
 class LeaderboardHandler(webapp2.RequestHandler):
     def get(self):
         user = users.get_current_user()
+        
+
         if user:
             email = user.nickname()
             logout_url = users.create_logout_url("/")
@@ -178,6 +180,14 @@ class PersonalHandler(webapp2.RequestHandler):
             self.response.write(personal_template.render(dd))
         else:
             self.redirect("/nouser")
+class changeDPHandler(webapp2.RequestHandler):
+    def get(self):
+        personal_template = jinja_env.get_template("templates/changeDP.html")
+        self.response.write(personal_template.render())
+
+
+
+
 
 class aboutHandler(webapp2.RequestHandler):
     def get(self):
@@ -202,7 +212,10 @@ class LoadDataHandler(webapp2.RequestHandler):
 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 02225715192d2cc4e927db5663713839d86abe4e
 app = webapp2.WSGIApplication([
     ('/', LoginHandler),
     ('/loggedin', MainHandler),
@@ -211,5 +224,6 @@ app = webapp2.WSGIApplication([
     ('/Leaderboard', LeaderboardHandler),
     ('/personal', PersonalHandler),
     ('/about', aboutHandler),
-    ('/seed-data', LoadDataHandler)
+    ('/seed-data', LoadDataHandler),
+    ('/changedp', changeDPHandler)
 ], debug=True)
