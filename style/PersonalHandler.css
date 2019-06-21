@@ -43,12 +43,6 @@ body {
   background-color: #efefef;
 }
 
-h3 {
-  margin-left: 100px;
-  width: 150px;
-  height: 150px;
-  color: blue;
-}
 
 * {
   margin: 0;
@@ -109,6 +103,15 @@ h1 {
 h2 {
   margin-left:100px;
   font-family: 'Dosis', sans-serif;
+}
+
+
+h3 {
+  font-family: 'Dosis', sans-serif;
+  margin-left: 100px;
+  width: 150px;
+  height: 150px;
+  color: blue;
 }
 
 h4 {
