@@ -26,11 +26,6 @@ html, body {
   cursor: pointer;
 }
 
-<<<<<<< HEAD
-
-#titles {
-  font-family: 'Dosis', sans-serif;
-=======
 #profile-container {
   margin-left: 100px;
     width: 150px;
@@ -42,7 +37,6 @@ html, body {
     -o-border-radius: 50%;
     border-radius: 50%;
     border-style: dotted;
->>>>>>> 64133cee6d8869df354e11e353c631b1ee47c91c
 }
 
 body {
