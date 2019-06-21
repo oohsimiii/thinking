@@ -5,28 +5,34 @@ html, body {
   font-family: "Dosis" sans-serif;
 }
 
+.button{
+  font-weight: bold;
+  -webkit-transition: all .5s;
+  -webkit-border-radius: 5px;
+  line-height: 20px;
+  color: white;
+  background: #b6d8efde;
+  width: 150px;
+  text-align: center;
+  font-family: 'Dosis', sans-serif, bold;
+  justify-content: flex-end;
+  padding: 0;
+  margin: 0;
+  box-shadow: 1px 1px 5px rgba(0,0,0,1);
+}
+
+.button:hover{
+  background: #73a3c4de;
+  cursor: pointer;
+}
+
+
 #titles {
   font-family: 'Dosis', sans-serif;
 }
 
-
-#profile-container {
-    width: 150px;
-    height: 150px;
-    overflow: hidden;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    border-radius: 50%;
-    border-style: dotted;
-}
-
-#profileImage {
-  width: 150px;
-  height: 150px;
-  margin-top: -1px;
-  margin-left: -1px;
+body {
+  background-color: #efefef;
 }
 
 h3 {
